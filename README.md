@@ -12,7 +12,7 @@ The BMI Calculator is a simple web application that allows users to calculate th
 - Clear display of BMI results and weight category guides.
 - Attractive design with responsive layout.
 - Glowing effects for an enhanced user experience.
-
+- For better experience open in dekstop or laptop. 
 ## Technologies Used
 - HTML
 - CSS
