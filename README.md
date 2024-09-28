@@ -19,19 +19,19 @@ The BMI Calculator is a simple web application that allows users to calculate th
 - JavaScript
 
 ## Usage
--Enter your height in centimeters and weight in kilograms.
--Click the "Calculate" button.
--Your BMI will be displayed along with a weight guide indicating your weight category.
+- Enter your height in centimeters and weight in kilograms.
+- Click the "Calculate" button.
+- Your BMI will be displayed along with a weight guide indicating your weight category.
 
 ## Contributing
-Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
+- Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
 
 ## Acknowledgments
--Inspiration from various web design resources.
--Special thanks to online communities for their valuable resources and tutorials.
+- Inspiration from various web design resources.
+- Special thanks to online communities for their valuable resources and tutorials.
 
 ## Contact
--If you have any questions or suggestions, feel free to reach out to me:
+- If you have any questions or suggestions, feel free to reach out to me:
 
 Email: rahulkumar2112k@gmail.com
 
