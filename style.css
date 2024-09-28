@@ -1,4 +1,3 @@
-/* Base styles (for large devices like desktops and laptops) */
 body {
   background-color: #1f2833;
   margin: 0;
@@ -27,16 +26,17 @@ body {
 .container h1 {
   text-align: center;
   margin-bottom: 10px;
-  font-size: 3em;
-  color: #15d4d4;
+  font-size: 3em; /* Slightly larger font size for more impact */
+  color: #15d4d4; /* Text color */
   text-shadow: 
-    0 0 10px rgba(21, 212, 212, 0.9),
-    0 0 20px rgba(21, 212, 212, 0.815),
-    0 0 30px rgba(21, 212, 212, 0.4),
-    0 0 40px rgba(21, 212, 212, 0.2);
-  animation: glowing 1.5s infinite alternate;
+    0 0 10px rgba(21, 212, 212, 0.9),  /* First glow layer with more intensity */
+    0 0 20px rgba(21, 212, 212, 0.815),  /* Second glow layer */
+    0 0 30px rgba(21, 212, 212, 0.4),  /* Third glow layer */
+    0 0 40px rgba(21, 212, 212, 0.2);  /* Fourth glow layer */
+  animation: glowing 1.5s infinite alternate; /* Add glowing animation */
 }
 
+/* Animation for glowing effect */
 @keyframes glowing {
   0% {
     text-shadow: 
@@ -54,6 +54,7 @@ body {
   }
 }
 
+
 .container input {
   width: 50%;
   height: 40px;
@@ -66,6 +67,7 @@ body {
   margin: 40px auto;
   display: block;
   box-shadow: 0 4px 20px rgb(0, 51, 117); 
+  
 }
 
 .container input:focus {
@@ -86,12 +88,14 @@ body {
   cursor: pointer;
   box-shadow: 0 4px 20px rgb(5, 190, 153); 
   transition: background-color 0.3s ease, transform 0.2s ease;
+
 }
 
 .calc-button:hover {
   background-color: #f0f0f0;
   transform: scale(1.05);
   box-shadow: 0 4px 20px rgb(0, 51, 117); 
+
 }
 
 #weight-guide {
@@ -103,40 +107,36 @@ body {
   margin-bottom: 10px;
   color: #075aac;
 }
-
-#p1, #p2, #p3, #p4, #p5 {
-  text-align: center;
-}
-
 #p1 {
   color: skyblue;
-  text-shadow: 0 0 5px rgba(135, 206, 250, 0.7),
+  text-shadow: 0 0 5px rgba(135, 206, 250, 0.7),  /* Glow effect for skyblue */
                0 0 10px rgba(135, 206, 250, 0.5);
 }
 
 #p2 {
   color: rgb(104, 179, 104);
-  text-shadow: 0 0 5px rgba(0, 255, 0, 0.7),
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.7),  /* Glow effect for green */
                0 0 10px rgba(0, 255, 0, 0.5);
 }
 
 #p3 {
   color: yellow;
-  text-shadow: 0 0 5px rgba(255, 255, 0, 0.7),
+  text-shadow: 0 0 5px rgba(255, 255, 0, 0.7),  /* Glow effect for yellow */
                0 0 10px rgba(255, 255, 0, 0.5);
 }
 
 #p4 {
   color: orangered;
-  text-shadow: 0 0 5px rgba(255, 69, 0, 0.7),
+  text-shadow: 0 0 5px rgba(255, 69, 0, 0.7),  /* Glow effect for orangered */
                0 0 10px rgba(255, 69, 0, 0.5);
 }
 
 #p5 {
   color: red;
-  text-shadow: 0 0 5px rgba(255, 0, 0, 0.7),
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.7),  /* Glow effect for red */
                0 0 10px rgba(255, 0, 0, 0.5);
 }
+
 
 #results {
   font-size: 24px;
@@ -145,103 +145,14 @@ body {
   color: #ffffff;
 }
 
+
 .image {
   width: 40%; 
   height: 80%;
   background-image: url('bmi.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: contain; /* Ensure the entire image fits within the div */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image in the div */
 }
 
-/* Media Queries */
 
-/* For tablets and smaller laptops (widths between 768px and 1024px) */
-@media (max-width: 1024px) {
-  .container {
-    width: 60vw; /* Adjust container width for smaller screens */
-    height: 85vh;
-  }
-
-  .container h1 {
-    font-size: 2.5em;
-  }
-
-  .container input {
-    width: 60%; /* Make input fields wider */
-  }
-
-  .calc-button {
-    width: 40%;
-  }
-
-  .image {
-    width: 50%;
-  }
-}
-
-/* For mobile devices (widths up to 768px) */
-@media (max-width: 768px) {
-  .container {
-    width: 80vw;
-    height: auto; /* Allow container to grow based on content */
-    padding: 20px;
-  }
-
-  .container h1 {
-    font-size: 2em;
-  }
-
-  .container input {
-    width: 80%; /* Make input fields almost full-width */
-  }
-
-  .calc-button {
-    width: 50%;
-  }
-
-  .image {
-    width: 60%;
-  }
-
-  #weight-guide h2 {
-    font-size: 1.5em;
-  }
-
-  #results {
-    font-size: 20px;
-  }
-}
-
-/* For very small devices (widths up to 480px) */
-@media (max-width: 480px) {
-  .container {
-    width: 90vw;
-    height: auto;
-    padding: 10px;
-  }
-
-  .container h1 {
-    font-size: 1.8em;
-  }
-
-  .container input {
-    width: 90%;
-  }
-
-  .calc-button {
-    width: 60%;
-  }
-
-  .image {
-    width: 70%;
-  }
-
-  #weight-guide h2 {
-    font-size: 1.2em;
-  }
-
-  #results {
-    font-size: 18px;
-  }
-}
