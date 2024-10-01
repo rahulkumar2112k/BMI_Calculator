@@ -29,7 +29,7 @@ form.addEventListener('submit', function (e) {
       results.innerHTML = `<span>BMI = ${bmi} you are Obese 🫣</span>`;
     }
     else {
-      results.innerHTML = `<span>BMI = ${bmi} you are extremely Obese 🤰</span>`;
+      results.innerHTML = `<span>BMI = ${bmi} you are extremely Obese 🤡</span>`;
     }
 
   }
